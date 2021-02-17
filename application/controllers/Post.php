@@ -14,7 +14,7 @@ class Post extends CI_Controller
 
       $this->load->library('pagination');
 
-      $config['base_url'] = 'http://localhost/ci3/post/index';
+      $config['base_url'] = 'https://ci-web-artikel.herokuapp.com/post/index';
 
       if ($this->session->userdata('search') == false) {
         $this->session->set_userdata('search','');
